@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  color: #8bacda;
+  background-color: #0d192b;
+  line-height: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #14253d;
+  height: 40.5rem;
+  width: 25rem;
+  border-radius: 17px;
+  box-shadow: 0px 35px 2px 26px rgba(0, 0, 0, 0.09),
+    0px 38px 13px 66px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.img-cont {
+  overflow: hidden;
+  border-radius: 14px;
+  height: 21rem;
+  position: relative;
+}
+
+.equi-img {
+  width: 100%;
+  height: 100%;
+}
+
+.eye-icon {
+  border-radius: 0.75rem;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.eye-icon:hover {
+  cursor: pointer;
+  background: hsla(178, 100%, 50%, 0.4);
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-view.svg");
+  background-position: 50% 50%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.heading-primary {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.9rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.heading-primary:hover,
+.heading-primary:active {
+  color: #00fff7;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.helper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.value {
+  display: inline;
+  font-size: 1.2rem;
+}
+
+.modified {
+  font-weight: 600;
+  color: #00fff7;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 12px 0;
+  border-top: 1px solid #2f415b;
+}
+
+.author-img {
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.size {
+  font-size: 1.1rem;
+}
+
+.about {
+  display: inline;
+}
+
+.author {
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s ease-out;
+}
+
+.author:hover,
+.author:active {
+  color: #00fff7;
+}
+
+/*************************/
+/* RESPONSIVE */
+/*************************/
+
+@media (max-width: 144em) {
+  .card {
+    height: 39.5rem;
+    width: 25rem;
+  }
+
+  .heading-primary {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .value {
+    font-size: 1.1rem;
+  }
+
+  .size {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 50em) {
+  .card {
+    height: 33.3rem;
+    width: 20rem;
+  }
+
+  .img-cont {
+    height: 16rem;
+  }
+
+  .heading-primary {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .value {
+    font-size: 1rem;
+  }
+
+  .size {
+    font-size: 0.9rem;
+  }
+
+  .author-img {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+
+  .creator-info {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 23.438em) {
+  .card {
+    height: 30.5rem;
+    width: 18rem;
+  }
+
+  .img-cont {
+    height: 14rem;
+  }
+
+  .heading-primary {
+    font-size: 1.3rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .value {
+    font-size: 0.9rem;
+  }
+
+  .size {
+    font-size: 0.8rem;
+  }
+
+  .author-img {
+    height: 2.1rem;
+    width: 2.1rem;
+  }
+}
