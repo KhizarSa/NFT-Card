@@ -4,13 +4,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
   color: #8bacda;
   background-color: #0d192b;
   line-height: 1;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
