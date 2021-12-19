@@ -18,8 +18,8 @@ body {
 
 .card {
   background-color: #14253d;
-  height: 40.5rem;
-  width: 25rem;
+  height: 70%;
+  width: 25%;
   border-radius: 17px;
   box-shadow: 0px 35px 2px 26px rgba(0, 0, 0, 0.09),
     0px 38px 13px 66px rgba(0, 0, 0, 0.06);
