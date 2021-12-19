@@ -204,10 +204,6 @@ body {
 }
 
 @media (max-width: 23.438em) {
-  body {
-    height: 85vh;
-  }
-
   .card {
     height: 30.5rem;
     width: 18rem;
